@@ -8,7 +8,7 @@ const routes: Routes = [{
   path: '',
   component: PagesComponent,
   children: [{
-    path: 'dashboard',
+    path: 'login',//componentel inicial del sistema
     component: DashboardComponent,
   }, {
     path: 'ui-features',
@@ -29,6 +29,9 @@ const routes: Routes = [{
     path: 'forms',
     loadChildren: './forms/forms.module#FormsModule',
   }, {
+    path: 'test',
+    loadChildren: './test/test.module#TestModule',
+  },  {
     path: 'tables',
     loadChildren: './tables/tables.module#TablesModule',
   }, {

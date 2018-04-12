@@ -1,15 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common'; 
-import { Ng2SmartTableModule } from 'ng2-smart-table';
-
 import { ThemeModule } from '../../@theme/theme.module';
-import { TablesRoutingModule, routedComponents } from './tables-routing.module';
+import { TestRoutingModule, routedComponents } from './test-routing.module'; 
+import { Ng2SmartTableModule } from 'ng2-smart-table';
 import { SmartTableService } from '../../@core/data/smart-table.service';
 
 @NgModule({
   imports: [
     ThemeModule,
-    TablesRoutingModule,
+    TestRoutingModule, 
     Ng2SmartTableModule,
   ],
   declarations: [
@@ -17,6 +16,6 @@ import { SmartTableService } from '../../@core/data/smart-table.service';
   ],
   providers: [
     SmartTableService,
-  ],
+  ], 
 })
-export class TablesModule { }
+export class TestModule { }
